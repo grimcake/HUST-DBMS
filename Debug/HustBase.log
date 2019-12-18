@@ -1,0 +1,91 @@
+﻿生成启动时间为 2019/6/13 12:16:16。
+     1>项目“C:\Users\椰子饭\Desktop\HustBase（20190610版）\HustBase.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\HustBase.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug\HustBase.pch" /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt DBTest.cpp
+         DBTest.cpp
+     1>c:\users\椰子饭\desktop\hustbase（20190610版）\dbtest.cpp(56): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\椰子饭\desktop\hustbase（20190610版）\dbtest.cpp(71): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\椰子饭\desktop\hustbase（20190610版）\dbtest.cpp(77): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\椰子饭\desktop\hustbase（20190610版）\dbtest.cpp(81): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\椰子饭\desktop\hustbase（20190610版）\dbtest.cpp(135): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\椰子饭\desktop\hustbase（20190610版）\dbtest.cpp(179): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\椰子饭\desktop\hustbase（20190610版）\dbtest.cpp(180): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : 参见“strcat”的声明
+     1>c:\users\椰子饭\desktop\hustbase（20190610版）\dbtest.cpp(181): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : 参见“strcat”的声明
+     1>c:\users\椰子饭\desktop\hustbase（20190610版）\dbtest.cpp(206): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\椰子饭\desktop\hustbase（20190610版）\dbtest.cpp(213): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\椰子饭\desktop\hustbase（20190610版）\dbtest.cpp(220): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\椰子饭\desktop\hustbase（20190610版）\dbtest.cpp(127): warning C4101: “lpszCurDir”: 未引用的局部变量
+     1>c:\users\椰子饭\desktop\hustbase（20190610版）\dbtest.cpp(128): warning C4101: “tchBuffer”: 未引用的局部变量
+         所有输出均为最新。
+       ResourceCompile:
+         所有输出均为最新。
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\HustBase.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\HustBase.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\椰子饭\Desktop\HustBase（20190610版）\Debug\HustBase.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\HustBase.lib" /MACHINE:X86 Debug\HustBase.res
+         Debug\HustBase.exe.embed.manifest.res
+         .\Debug\DBTest.obj
+         .\Debug\EditArea.obj
+         .\Debug\HustBase.obj
+         .\Debug\HustBaseDoc.obj
+         .\Debug\HustBaseView.obj
+         .\Debug\IX_Manager.obj
+         .\Debug\lex.yy.obj
+         .\Debug\MainFrm.obj
+         .\Debug\parse.obj
+         .\Debug\PF_Manager.obj
+         .\Debug\QU_Manager.obj
+         .\Debug\RM_Manager.obj
+         .\Debug\StdAfx.obj
+         .\Debug\SYS_Manager.obj
+         .\Debug\TableList.obj
+         .\Debug\TreeList.obj
+         .\Debug\yacc_sql.tab.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\HustBase.exe.embed.manifest" /manifest Debug\HustBase.exe.intermediate.manifest "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\HustBase.exe.embed.manifest.res" Debug\HustBase_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\HustBase.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\HustBase.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\椰子饭\Desktop\HustBase（20190610版）\Debug\HustBase.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\HustBase.lib" /MACHINE:X86 Debug\HustBase.res
+         Debug\HustBase.exe.embed.manifest.res
+         .\Debug\DBTest.obj
+         .\Debug\EditArea.obj
+         .\Debug\HustBase.obj
+         .\Debug\HustBaseDoc.obj
+         .\Debug\HustBaseView.obj
+         .\Debug\IX_Manager.obj
+         .\Debug\lex.yy.obj
+         .\Debug\MainFrm.obj
+         .\Debug\parse.obj
+         .\Debug\PF_Manager.obj
+         .\Debug\QU_Manager.obj
+         .\Debug\RM_Manager.obj
+         .\Debug\StdAfx.obj
+         .\Debug\SYS_Manager.obj
+         .\Debug\TableList.obj
+         .\Debug\TreeList.obj
+         .\Debug\yacc_sql.tab.obj
+         HustBase.vcxproj -> C:\Users\椰子饭\Desktop\HustBase（20190610版）\Debug\HustBase.exe
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o".\Debug\HustBase.bsc" Debug\DBTest.sbr Debug\EditArea.sbr Debug\HustBase.sbr Debug\HustBaseDoc.sbr Debug\HustBaseView.sbr Debug\IX_Manager.sbr Debug\lex.yy.sbr Debug\MainFrm.sbr Debug\parse.sbr Debug\PF_Manager.sbr Debug\QU_Manager.sbr Debug\RM_Manager.sbr Debug\StdAfx.sbr Debug\SYS_Manager.sbr Debug\TableList.sbr Debug\TreeList.sbr Debug\yacc_sql.tab.sbr
+       FinalizeBuildStatus:
+         正在删除文件“Debug\HustBase.unsuccessfulbuild”。
+         正在对“Debug\HustBase.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Users\椰子饭\Desktop\HustBase（20190610版）\HustBase.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:04.81
