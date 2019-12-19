@@ -24,6 +24,10 @@ public:
 	}
 	~BitMap()
 	{
+		if (bitpos_)
+		{
+			delete bitpos_;
+		}
 	}
 
 	void Set(int x)
