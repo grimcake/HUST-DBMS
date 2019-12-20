@@ -36,6 +36,17 @@ RC OpenScan(RM_FileScan *rmFileScan,RM_FileHandle *fileHandle,int conNum,Con *co
 	return SUCCESS;
 }
 
+RC CloseScan(RM_FileScan *rmFileScan)
+{
+	rmFileScan->bOpen = false;
+	rmFileScan->conditions = NULL;
+	rmFileScan->conNum = 0;
+	rmFileScan->pn = 0;
+	rmFileScan->sn = 0;
+	UnpinPage(&rmFileScan->PageHandle);
+	return SUCCESS;
+}
+
 RC GetNextRec(RM_FileScan *rmFileScan,RM_Record *rec)
 {
 	if (rmFileScan->bOpen == false)
@@ -78,15 +89,7 @@ RC GetNextRec(RM_FileScan *rmFileScan,RM_Record *rec)
 					leftVal = (condition->bLhsIsAttr == 1) ? *((int*)(recAddr + condition->LattrOffset)) : *((int*)condition->Lvalue);
 					if (condition->compOp == NO_OP)
 					{
-						if (leftVal == 0)
-						{
-							correct = false;
-							break;
-						}
-						else
-						{
-							break;
-						}
+						
 					}
 					rightVal = (condition->bRhsIsAttr == 1) ? *((int *)(recAddr + condition->RattrOffset)) : *((int *)condition->Rvalue);
 					correct = CmpVal(leftVal, rightVal, condition->compOp);
@@ -95,15 +98,7 @@ RC GetNextRec(RM_FileScan *rmFileScan,RM_Record *rec)
 					leftVal = (condition->bLhsIsAttr == 1) ? *((float*)(recAddr + condition->LattrOffset)) : *((float*)condition->Lvalue);
 					if (condition->compOp == NO_OP)
 					{
-						if (leftVal == 0)
-						{
-							correct = false;
-							break;
-						}
-						else
-						{
-							break;
-						}
+						
 					}
 					rightVal = (condition->bRhsIsAttr == 1) ? *((float *)(recAddr + condition->RattrOffset)) : *((float *)condition->Rvalue);
 					correct = CmpVal(leftVal, rightVal, condition->compOp);
@@ -111,8 +106,7 @@ RC GetNextRec(RM_FileScan *rmFileScan,RM_Record *rec)
 				case chars:
 					if (condition->compOp == NO_OP)
 					{
-						correct = false;
-						break;
+						
 					}
 					leftStr = (condition->bLhsIsAttr == 1) ? (recAddr + condition->LattrOffset) : (char *)condition->Lvalue;
 					rightStr = (condition->bRhsIsAttr == 1) ? (recAddr + recOffset + condition->RattrOffset) : (char *)condition->Rvalue;
@@ -151,12 +145,13 @@ RC GetNextRec(RM_FileScan *rmFileScan,RM_Record *rec)
 		rmFileScan->pn = rmFileScan->pRMFileHandle->pageBitMap->FirstBit(rmFileScan->pn + 1, 1);
 		if (rmFileScan->pn == -1)
 		{
-			return FAIL;
+			return RM_NOMORERECINMEM;
 		}
 		GetThisPage(&rmFileScan->pRMFileHandle->pfFileHandle, rmFileScan->pn, &rmFileScan->PageHandle);
 		rmFileScan->sn = 0;
 	}
-	return FAIL;
+	return RM_NOMORERECINMEM;
+
 }
 
 RC GetRec (RM_FileHandle *fileHandle,RID *rid, RM_Record *rec) 
